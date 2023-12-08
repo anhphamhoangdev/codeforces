@@ -15,13 +15,13 @@ int main()
     int size = s1.length() + s2.length();
     s1.append(s2);
     string s3; cin >> s3;
-    sort(s1.begin(),s1.end());
-    sort(s3.begin(),s3.end());
     if(s3.length() > size)
     {
         cout << "NO";
         return 0;
     }
+    sort(s1.begin(),s1.end());
+    sort(s3.begin(),s3.end());
     FOR(i,0,size)
     {
         if(s1[i] != s3[i])
